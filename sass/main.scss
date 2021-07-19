@@ -2,19 +2,10 @@
 @import "base/animation";
 @import "base/base";
 @import "components/button";
+@import "components/composition";
 @import "layout/header";
 @import "pages/home";
 @import "base/utilities";
 @import "layout/grid";
 @import "abstracts/mixins";
-@import "base/typography"; /*
-
-
-
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+@import "base/typography";
