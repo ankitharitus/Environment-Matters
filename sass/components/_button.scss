@@ -41,6 +41,15 @@
     background-color: $color-white;
     color: $color-black;
   }
+
+  &-green {
+    background-color: $primary-color;
+    color: $color-white;
+  }
+  &-green::after {
+    background-color: $primary-color;
+    color: $color-black;
+  }
   &:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
