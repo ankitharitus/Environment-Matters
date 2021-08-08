@@ -1,0 +1,8 @@
+clip image:polygon
+background-blend-mode:screen
+video
+backface-visibilty
+perspective
+ filter: blur(3px) brightness(80%);
+ shape outside
+ round image by clip path circle(50% at 50% 50%)
