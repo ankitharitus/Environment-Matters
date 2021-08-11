@@ -8,40 +8,23 @@
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   color: $color-white;
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
   &__logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
     backface-visibility: hidden;
   }
   &__logo {
-    height: 35px;
+    height: 3.5rem;
   }
-  &__heading-primary-main {
-    display: block;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 35px;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* animation-delay: 1s;
-              animation-iteration-count: 5;
-              animation-timing-function: ease-out; */
-  }
-  &__heading-primary-sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 16.2px;
-    animation-name: moveInRight;
-    animation-timing-function: ease-out;
-    animation-duration: 1s;
-    margin-bottom: 40px;
-  }
+
   &__Title {
     position: absolute;
     top: 40%;
